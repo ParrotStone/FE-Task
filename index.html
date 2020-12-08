@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A simple landing page!" />
+    <meta name="keywords" content="Landing page, task, simple" />
+    <meta name="author" content="Acme Inc." />
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <title>FE-Task Landing Page</title>
+  </head>
+  <body class="text-white bg-gray-800">
+    <!-- About section -->
+    <section id="about-section">
+      <h1 class="text-6xl text-center mt-12">Acme Design.</h1>
+      <p class="mt-24 text-center text-xl">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione tempore
+        temporibus placeat enim doloribus quidem! Obcaecati, expedita ipsam
+        veritatis, cupiditate eum aperiam doloribus, nesciunt ad consequatur
+        possimus excepturi enim vero. Quod at, excepturi voluptatibus commodi
+        architecto adipisci sunt? Placeat iste, aperiam necessitatibus iure
+        sequi dolor ipsum voluptatibus accusantium quia cumque.
+      </p>
+    </section>
+
+    <!-- Dynamic section -->
+    <section class="my-12">
+      <h1 class="text-center text-6xl">Dynamic Section</h1>
+      <div class="data-container text-center mt-12"></div>
+      <div class="mt-12">
+        <button
+          class="block mx-auto w-1/3 bg-blue-500 py-2 px-4 text-white text-lg font-bold rounded transition-all duration-300 ease-out hover:bg-blue-600"
+          id="get-data"
+        >
+          Get Data
+        </button>
+      </div>
+    </section>
+
+    <!-- Contact section -->
+    <section class="mt-32 w-full">
+      <form>
+        <div class="my-10 name">
+          <label for="name" class="font-bold block w-3/4 md:w-1/2 mx-auto"
+            >Name</label
+          >
+          <input
+            type="text"
+            placeholder="Name"
+            id="name"
+            name="name"
+            class="block bg-white appearance-none h-12 w-3/4 md:w-1/2 mx-auto border-2 border-green-600 rounded py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white"
+          />
+          <div
+            class="message-container text-red-600 w-3/4 md:w-1/2 mx-auto"
+          ></div>
+        </div>
+        <div class="my-10 email">
+          <label for="email" class="block font-bold w-3/4 md:w-1/2 mx-auto"
+            >Email</label
+          >
+          <input
+            type="email"
+            placeholder="Email"
+            id="email"
+            name="email"
+            class="block bg-white appearance-none h-12 w-3/4 md:w-1/2 mx-auto border-2 border-green-600 rounded py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white"
+          />
+          <div
+            class="message-container text-red-600 w-3/4 md:w-1/2 mx-auto"
+          ></div>
+        </div>
+        <div class="my-10 phone">
+          <label for="phone" class="font-bold block w-3/4 md:w-1/2 mx-auto"
+            >Phone</label
+          >
+          <input
+            type="tel"
+            placeholder="Phone number"
+            id="phone"
+            name="phone"
+            class="block bg-white appearance-none h-12 w-3/4 md:w-1/2 mx-auto border-2 border-green-600 rounded py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white"
+          />
+          <div
+            class="message-container text-red-600 w-3/4 md:w-1/2 mx-auto"
+          ></div>
+        </div>
+        <div class="my-10 message">
+          <label for="message" class="font-bold block w-3/4 md:w-1/2 mx-auto"
+            >Message</label
+          >
+          <textarea
+            placeholder="Message"
+            name="message"
+            id="message"
+            class="block bg-white appearance-none h-48 w-3/4 md:w-1/2 mx-auto border-2 border-green-600 rounded px-4 py-2 text-gray-700 leading-tight focus:outline-none focus:bg-white"
+          ></textarea>
+          <div
+            class="message-container text-red-600 w-3/4 md:w-1/2 mx-auto"
+          ></div>
+        </div>
+        <div class="my-12">
+          <button
+            type="submit"
+            class="block mx-auto w-1/4 bg-blue-500 py-2 px-4 text-white text-lg font-bold rounded transition-all duration-300 ease-out hover:bg-blue-600"
+          >
+            Submit
+          </button>
+        </div>
+      </form>
+    </section>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
